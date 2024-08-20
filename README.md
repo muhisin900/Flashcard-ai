@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Flashcards
 
-## Getting Started
+AI Flashcards is a web application that generates personalized flashcards based on user-inputted text, helping users to study more efficiently. The application includes features like user authentication, premium subscription options, and the ability to save and manage flashcards.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **AI-Generated Flashcards**: Automatically generate study materials based on the text provided by the user.
+- **User Authentication**: Secure sign-in and sign-up using Clerk and Firebase.
+- **Save and Manage Flashcards**: Users can save their flashcards and access them later.
+- **Premium Subscription**: Access to advanced features via a premium subscription, with payment processing handled by Stripe.
+- **Responsive Design**: Fully responsive and designed with Material UI for an optimal user experience across devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js, React, Material UI
+- **Backend**: Firebase
+- **AI Integration**: OpenAI API
+- **Authentication**: Clerk, Firebase Auth
+- **Payment Processing**: Stripe API
+- **Deployment**: Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+To run this project locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/your-username/ai-flashcards.git
+   cd ai-flashcards
+2. **Install dependencies:**
+    Copy code
+    ```npm install
+3. **Set up environment variables:**
+    Create a .env.local file in the root directory and add your API keys and configuration settings:
+    NEXT_PUBLIC_OPENAI_API_KEY=your-openai-api-key
+    NEXT_PUBLIC_FIREBASE_API_KEY=your-firebase-api-key
+    NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your-stripe-public-key
+    NEXT_PUBLIC_CLERK_FRONTEND_API=your-clerk-frontend-api
+    NEXT_PUBLIC_CLERK_API_KEY=your-clerk-api-key
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. **Run the development server:**
+    npm run dev
+    Open http://localhost:3000 to view the application in your browser.
